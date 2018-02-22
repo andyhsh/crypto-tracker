@@ -7,6 +7,18 @@ class App extends Component {
     data: []
   };
 
+  componentDidMount() {
+    this.callApi()
+      .then(res => console.log(res))
+      .catch(err => console.error(err));
+  }
+
+  callApi = async () => {
+    const response = await fetch('/api/hello');
+    const body = await response.json();
+    return body;
+  };
+
   render() {
     return (
       <div className="container">
