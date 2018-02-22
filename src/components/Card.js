@@ -13,14 +13,16 @@ const Card = function({ name, price, volume, change }) {
   return (
     <div className="card">
       <h2>{fullName}</h2>
-      <h3>{price}</h3>
+      <h3>${price}</h3>
       <div className="card__section">
-        <h4>Volume:</h4>
-        <span>{volume}</span>
-      </div>
-      <div className="card__section">
-        <h4>Change:</h4>
-        <span className={fluctuationColor}>{change}</span>
+        <div>
+          <h4>Volume:</h4>
+          {volume}
+        </div>
+        <div>
+          <h4>Change:</h4>
+          <span className={fluctuationColor}>{change}</span>
+        </div>
       </div>
     </div>
   );

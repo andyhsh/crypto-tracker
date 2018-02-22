@@ -4,6 +4,7 @@ export const mapping = {
   LTC: 'Litecoin',
   XMR: 'Monero',
   XRP: 'Ripple',
+  DASH: 'Dash',
   DOGE: 'Dogecoin',
   MAID: 'MaidSafeCoin',
   LSK: 'Lisk',

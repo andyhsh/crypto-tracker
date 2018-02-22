@@ -3984,6 +3984,10 @@ lodash.uniq@^4.5.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
+lodash@^3.5.0:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+
 loglevel@^1.4.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
@@ -5570,6 +5574,13 @@ sane@~1.6.0:
     walker "~1.0.5"
     watch "~0.10.0"
 
+sanitize@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sanitize/-/sanitize-2.0.1.tgz#d0ce84391c4d709441854f02bef72ec8b41fc1a8"
+  dependencies:
+    lodash "^3.5.0"
+    validator "^3.33.0"
+
 sax@^1.2.1, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -6311,6 +6322,10 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
+
+validator@^3.33.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-3.43.0.tgz#96464b992d4196833d97a194bf40b19ff54bae05"
 
 vary@~1.1.2:
   version "1.1.2"

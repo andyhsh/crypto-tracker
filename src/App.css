@@ -1,28 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+.container {
+  margin: 0 auto;
+  max-width: 1304px;
   padding: 20px;
-  color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.container h1 {
+  font-size: 3em;
 }
 
-.App-intro {
-  font-size: large;
+.container__cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.card {
+  width: 300px;
+  border: 1px #8d8d8d solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 8px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.card h3 {
+  margin: 0.5em 0;
+  color: rgb(253, 168, 19);
+  font-size: 1.3em;
+}
+
+.card h4 {
+  margin: 0.5em 0em;
+}
+
+.card__section {
+  display: flex;
+  color: rgb(128, 128, 128);
+}
+
+.card__section--positive {
+  color: rgb(5, 172, 5);
+}
+
+.card__section--negative {
+  color: rgb(255, 0, 0);
 }
