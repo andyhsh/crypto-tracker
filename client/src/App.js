@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import io from 'socket.io-client';
 import Card from './components/Card';
 import { data } from './config/dummyData';
 
@@ -8,16 +9,11 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.callApi()
-      .then(res => console.log(res))
-      .catch(err => console.error(err));
+    this.socket = io('http://localhost:4000');
+    this.socket.on('connect', test => {
+      console.log('User connected (client browser)');
+    });
   }
-
-  callApi = async () => {
-    const response = await fetch('/api/hello');
-    const body = await response.json();
-    return body;
-  };
 
   render() {
     return (
